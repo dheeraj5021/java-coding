@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Autonum
+
+{
+
+public static void main(String args[])
+
+ {
+
+Scanner sc=new Scanner(System.in);
+  
+int n;
+n=sc.nextInt();
+
+int r=0;
+
+int s=n*n;
+while(s!=0)
+
+{
+
+r=s%100;
+
+s=0;
+
+}
+
+if(r==n)
+System.out.println("automorphic");
+
+else
+System.out.println(" not automorphic");
+
+}
+}
