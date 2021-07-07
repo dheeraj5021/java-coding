@@ -1,0 +1,29 @@
+import java.util.*;
+class Even_odd
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter size");
+int n=sc.nextInt();
+int evencount=0,oddcount=0,product=0;
+System.out.println("enter elements");
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+if(arr[i]%2==0)
+evencount=evencount+1;
+else
+oddcount=oddcount+1;
+}
+product=oddcount*evencount;
+if(product%2==0)
+System.out.println("product is even"); 
+else
+System.out.println("product is odd");
+}
+}
