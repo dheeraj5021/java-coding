@@ -1,0 +1,16 @@
+import java.util.*;
+class inserting
+{
+ public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    String s=sc.next();
+    System.out.print("Enter inserting string:");
+    String g=sc.next();
+    System.out.print("Enter the position to insert string:");
+    int n=sc.nextInt();
+    StringBuffer sb=new StringBuffer(s);
+    sb.insert(n,g);
+    System.out.print(sb.toString());
+   }
+}
