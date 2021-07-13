@@ -1,0 +1,24 @@
+import java.util.*;
+class Stringcharacter 
+{
+    public static void main(String[] args) 
+{
+        String s; 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the string"); 
+        s=sc.nextLine();
+        String str[]=s.split(" ");
+        int n=str.length;
+        for(int i=0;i<n;i++)
+        {
+          String st=str[i];
+          char ch[]=st.toCharArray();
+          ch[0]=Character.toUpperCase(ch[0]);
+          String m=String.valueOf(ch);
+         str[i]=m; 
+        }
+        for(int i=0;i<n;i++)
+        System.out.print(str[i]);
+System.out.print(" ");
+    }
+}
