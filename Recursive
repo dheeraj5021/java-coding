@@ -1,0 +1,20 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Recursive {
+    int f; 
+    int fact(int n) 
+    {
+        f=n;
+        for(int i=1;i<n-1;i++)
+         f=f*(n-i);
+        return f; 
+    }
+    public static void main(String[] args) {
+        Recursive r=new Recursive();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the factorial"); 
+        int x=sc.nextInt();
+        System.out.println(r.fact(x));
+    }
+}
